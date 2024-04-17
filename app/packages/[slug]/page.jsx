@@ -53,7 +53,7 @@ const page = ({ params }) => {
             <img src="../images/gallery/01.jpg" className='w-100' alt="Bahrain" />
             </div>
             <div className="col-md-2">
-            <iframe width="100%" height="340" src="https://www.youtube.com/embed/IHa0uoVjfOE?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=IHa0uoVjfOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" height="350" src="https://www.youtube.com/embed/IHa0uoVjfOE?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist=IHa0uoVjfOE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             
 
