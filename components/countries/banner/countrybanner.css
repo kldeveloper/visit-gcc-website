@@ -7,6 +7,8 @@
     background-size: cover;
     z-index: 100; 
     text-align: center;
+    float: left;
+    width: 100%;
 }
 
 .countrybanner h1 {
