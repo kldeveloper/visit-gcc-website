@@ -6,7 +6,7 @@ import Events from "@/components/home/events/Events"
 import Destination from '@/components/countries/destination/Destination'
 import Contacts from '@/components/countries/contacts/Contacts'
 import SliderOne from '@/components/slider/SliderOne';
-import styles from './packages.module.css';
+import styles from '../packages/packages.module.css';
 
 
 
@@ -47,6 +47,23 @@ const page = () => {
           </div>
         </div>
       </section>
+
+      <section className={styles['package-category-01']}>
+        <div className={styles['home-blog']}>
+          <div className={'container'}>
+            <div className={'row'}>
+              <div className={'col-md-6 pb-3'}>
+                <h3>New Things This Month</h3>
+              </div>
+              <div className={'col-md-6 pb-3 text-right'}>
+                <a href="/" className={'float-right'}>View All</a>
+              </div>
+              <SliderOne values={packagesData} speed={10000} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Contacts/>
       
       

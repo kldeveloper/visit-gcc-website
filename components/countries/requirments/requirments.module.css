@@ -1,28 +1,31 @@
 .accordin {
   position: relative;
-  /* border: 1px solid #7fd2ba; */
+  
   margin-bottom: 15px;
   border-radius: 6px;
 }
   
-  input[type="checkbox"] {
-    display: none;
-  }
+/* styles.css */
+
+.accordin input[type="checkbox"] {
+  display: none;
+}
+
   
-  label {
+.accordin  label {
     position: relative;
     display: block;
     cursor: pointer;
   }
   
-  label:after {
+.accordin  label:after {
     content: "+";
     position: absolute;
     display: inline-block;
     right: 20px;
   }
   
-  input:checked + label:after {
+.accordin  input:checked + label:after {
     content: "-";
   }
   
@@ -41,7 +44,7 @@
     transition: all 0.3s ease;
   }
   
-  input[type="checkbox"]:checked ~ .accordin_detail {
+.accordin  input[type="checkbox"]:checked ~ .accordin_detail {
     max-height: 100px;
     padding: 1em;
   }

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import './about.css'
+import styles from './about.module.css';
 
 function Tabs({ selected = 0, children }) {
   const [currentTab, setCurrentTab] = useState(selected);
@@ -12,9 +12,9 @@ function Tabs({ selected = 0, children }) {
 
   return (
     <div>
-      <div className='tab-head'>
+      <div className={styles['tab-head']}>
 
-        <div className='container'>
+        <div className={'container'}>
 
           <div>
               <h3>About Country</h3>
@@ -24,19 +24,19 @@ function Tabs({ selected = 0, children }) {
 
       </div>
       
-      <div className='container'>
-      <div className='tab-sec'>
-      <ul className="inline">
-        {React.Children.map(children, (elem, index) => {
-          let style = index === currentTab ? 'selected' : '';
-          return (
-            <li className={style} key={index} onClick={() => handleChange(index)}>
-              {elem.props.title}
-            </li>
-          );
-        })}
-      </ul>
-      <div className="tab">{children[currentTab]}</div>
+      <div className={'container'}>
+      <div className={styles['tab-sec']}>
+      <ul className={styles.inline}>
+      {React.Children.map(children, (elem, index) => {
+        let dynamicClass = index === currentTab ? styles.selected : '';
+        return (
+          <li className={dynamicClass} key={index} onClick={() => handleChange(index)}>
+            {elem.props.title}
+          </li>
+        );
+      })}
+    </ul>
+      <div className={styles['tab']}>{children[currentTab]}</div>
     </div>
     </div>
     </div>
