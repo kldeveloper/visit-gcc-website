@@ -6,7 +6,7 @@ const ArrowIcon = () => <FaArrowRightLong />;
 function SingleHomePackage(props) {
     return (
         <>
-            <a className="item">
+            <a className={`item ${style['item-padding']}`}>
                 <div className={style['bg-black-shade']}></div>
                 <img src={props.image} className='w-100' alt="" />
                 <div className={style['home-packages-text']}>

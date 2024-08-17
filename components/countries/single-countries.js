@@ -10,7 +10,7 @@ const SingleCountry = (props) => {
       <img src={props.image} alt={props.heading} />
       <div className={style['title-countries']}>
         <h4>{props.heading}</h4>
-        <ArrowIcon />
+        {/*  <ArrowIcon />  */}
       </div>
     </div>
   );

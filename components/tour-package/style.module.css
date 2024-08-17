@@ -4,15 +4,19 @@
     padding: 50px 0;
 }
 
-.home-countries img{ border-radius: 15px;} 
+.home-countries img{
+    border-radius: 15px;
+    max-width: 130px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+} 
 .title-countries {
     float: left;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin-top: -32px;
+    justify-content: center;
     z-index: 10;
     position: relative;
     color: #fff;
