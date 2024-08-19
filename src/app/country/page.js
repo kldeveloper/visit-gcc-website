@@ -18,34 +18,9 @@ function country() {
 
 
     const countryExperiance = [
-
-    ];
-
-    const accordionData = [
-        {
-            title: 'ACTIVITIES',
-            items: ['Hiking', 'Camping', 'Wildlife Watching', 'Water Sports']
-        },
-        {
-            title: 'CULTURAL ACTIVITIES',
-            items: ['Sightseeing', 'Museums', 'Historical Sites', 'Festivals', 'Food and Wine Tours']
-        },
-        {
-            title: 'RELAXATION AND REJUVENATION',
-            items: ['Sightseeing', 'Museums', 'Historical Sites', 'Festivals', 'Food and Wine Tours']
-        },
-        {
-            title: 'FILTER BY STAY',
-            items: ['Budget-Friendly Motels', 'Luxurious Five-Star Resorts', 'Apartments', 'Private Villas', 'Homestays', 'Boutique Hotels', 'Tents']
-        },
-        {
-            title: 'TRAVEL STYLE',
-            items: ['Luxury', 'Adventure', 'Family-Friendly', 'Couple', 'Group Tour', 'Budget Friendly']
-        },
-        {
-            title: 'GEOGRAPHY',
-            items: ['Coastal', 'Desert', 'Mountain', 'Nature', 'Sea', 'Forest']
-        }
+        { id: 1, heading: 'Experience 1', description: 'Adventure', image: "/images/experience/01.jpg" },
+        { id: 2, heading: 'Experience 2', description: 'Cultural', image: "/images/experience/02.jpg" },
+        { id: 3, heading: 'Experience 3', description: 'Relaxation', image: "/images/experience/03.jpg" },
     ];
 
     return (
@@ -81,7 +56,9 @@ function country() {
                     <div className={style['country-explore']}>
                         <div className='container-fluid'>
                             <div className='row'>
+                            <div className='col-md-12 text-center mt-4'>
                                 <Carousal countryExplore={countryExplore} count={5} type="country-explore" />
+                            </div>
                             </div>
                             <div className='row'>
                                 <div className='col-md-12 text-center mt-4'>
@@ -177,7 +154,8 @@ function country() {
                     <div className={style['country-experiance']}>
                         <div className='container'>
                             <div className='row'>
-                                <Carousal countryExperiance={countryExperiance} count={3} type="country-experiance" />
+                            <Carousal countryExperiance={countryExperiance} count={3} type="country-experiance" />
+
                             </div>
                         </div>
                     </div>

@@ -118,6 +118,7 @@ function Carousal({
                         image={event.image}
                         heading={event.heading}
                         description={event.description}
+                        date={event.date}
                         link={event.link}
                     />
                 ))}
@@ -143,16 +144,17 @@ function Carousal({
                         link={country.link}
                     />
                 ))}
-            {type === 'country-experiance' &&
-                countryExperiance.map((experiance) => (
-                    <CountryExperiance
-                        key={experiance.id}
-                        image={experiance.image}
-                        heading={experiance.heading}
-                        description={experiance.description}
-                        link={experiance.link}
-                    />
-                ))}
+                {type === 'country-experiance' &&
+                    countryExperiance.map((experiance) => (
+                        <CountryExperiance
+                            key={experiance.id}
+                            image={experiance.image}
+                            heading={experiance.heading}
+                            description={experiance.description}
+                            link={experiance.link}
+                        />
+                    ))
+                }
             {type === 'country-explore' &&
                 countryExplore.map((countryExplore) => (
                     <CountryExplore
