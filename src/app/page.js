@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import style from './style.module.css';
 import Banner from '../../components/banner/banner';
 import Countries from '../../components/countries/countries';
@@ -70,7 +71,7 @@ function Home() {
               <h3>Upcoming events in April</h3>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-3 col-3 pdb-3 text-right">
-              <a href="/" className='float-right'>View All</a>
+              <Link href="#0" className='float-right'>View All</Link>
             </div>
             <Carousal events={eventsData} count={3} type="home-event" />
           </div>
@@ -86,7 +87,7 @@ function Home() {
               <h3>What to experience</h3>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-3 col-3 text-right">
-              <a href="/" className='float-right'>View All</a>
+              <Link href="#0" className='float-right'>View All</Link>
             </div>
             <Carousal experiences={experienceData} count={4} type="home-experience" />
           </div>
@@ -110,7 +111,7 @@ function Home() {
               <h3>Latest Blog Posts</h3>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-4 col-sm-3 col-3 pdb-3 text-right">
-              <a href="/" className='float-right'>View All</a>
+              <Link href="#0" className='float-right'>View All</Link>
             </div>
             <Carousal blog={blogData} count={4} type="home-blog" />
           </div>

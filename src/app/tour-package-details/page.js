@@ -1,6 +1,7 @@
 "use client"; // Add this if you need hooks or client-side functionalities here
 
 import React from 'react';
+import Link from 'next/link';
 import style from './style.module.css'; // Ensure correct path for styles
 import Banner from '../../../components/banner/banner'; // Ensure correct path
 import { FaCircle } from 'react-icons/fa';
@@ -76,7 +77,7 @@ function Page() {
                         <div className='col-md-7'>
                             <h3>4 DAYS IN SALALAH</h3>
                             <p>
-                                <a href='#'>By Easytours24h-Hanoi Day Tours</a>
+                                <Link href='#0'>By Easytours24h-Hanoi Day Tours</Link>
                             </p>
                             <div className={style['flex-package-details']}>
                                 <span>
@@ -246,7 +247,7 @@ function Page() {
                     <div className='row pt-5'>
                         <div className='col-md-12'>
                             <h4>User ratings</h4>
-                            <p className='mb-0'><IoIosStar color="#FDCC0D" />  4.2. Very good (13 reviews) <a href='#0'>See all reviews</a></p>
+                            <p className='mb-0'><IoIosStar color="#FDCC0D" />  4.2. Very good (13 reviews) <Link href='#0'>See all reviews</Link></p>
                         </div>
                     </div>
 
@@ -271,7 +272,7 @@ function Page() {
                             <h4>What guests loved most</h4>
                         </div>
                         <div className='col-md-4'>
-                            <a className='float-right' href='#0'>See all reviews</a>
+                            <Link className='float-right' href='#0'>See all reviews</Link>
                         </div>
                     </div>
                     <div className='row pt-3'>
@@ -311,7 +312,7 @@ function Page() {
                             <div className='row'>
                                 <div className='col-md-8'>
                                     <h3>Ask Your Questions</h3>
-                                    <p>If your question has not been answered, you can submit your own by using the form below. Alternatively, feel free to <a href='#0'><b><u>Contact Us</u></b></a> and one of our staff will be happy to assist you.</p>
+                                    <p>If your question has not been answered, you can submit your own by using the form below. Alternatively, feel free to <link href='#0'><b><u>Contact Us</u></b></link> and one of our staff will be happy to assist you.</p>
                                 </div>
                             </div>
 

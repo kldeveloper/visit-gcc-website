@@ -92,6 +92,7 @@
   background-image: none;
   padding-bottom: 0;
   z-index: 10000;
+  transition: all 0.3s ease; /* Smooth transition for background, padding, etc. */
 }
 .sticky .serch-div{ display: none;}
 .sticky .banner-container{ margin-bottom: 0;}

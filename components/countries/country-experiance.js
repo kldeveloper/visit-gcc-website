@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import style from './style.module.css';
 import { FaUser } from "react-icons/fa";
 import { BsChatFill } from "react-icons/bs";
@@ -23,7 +24,9 @@ function CountryExperiance(props) {
                     {/* back content */}
                     <h3><FaTwitter /></h3>
                     <p>{props.description}</p>
-                    <a href={props.link} target="_blank" rel="noopener noreferrer">{props.link}</a>
+                    <Link href={props.link} target="" rel="noopener noreferrer">
+                    {props.link}
+                    </Link>
                     <div className={style['block-content']}>
                         <div className={style['tag']}><span><FaUser /></span>Name</div>
                         <div className={style['tag']}><span><BsChatFill /></span>0 Comment</div>

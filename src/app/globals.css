@@ -250,7 +250,9 @@ h3 {
 .slick-prev, .slick-next{ display: none;}
 
 
-
+.slick-dots {
+  display: none !important;
+}
 
 
 

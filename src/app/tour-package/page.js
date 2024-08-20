@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import Link from 'next/link';
 import style from './style.module.css';
 import Banner from '../../../components/banner/banner';
 import Countries from '../../../components/countries/countries';
@@ -218,7 +219,7 @@ const Country = () => {
                                                         </div>
                                                         <div className='col-md-6'>
                                                             <div className={style['cta-section-right']}>
-                                                                <a href='tel:+5866 958 5545'>: +5866 958 5545</a>
+                                                                <Link href='tel:+5866 958 5545'>: +5866 958 5545</Link>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -236,7 +237,7 @@ const Country = () => {
                                                         </div>
                                                         <div className='col-md-6'>
                                                             <div className={style['cta-section-right']}>
-                                                                <a href='mailto:info@consultaid.com'>:info@consultaid.com</a>
+                                                                <Link href='mailto:info@consultaid.com'>:info@consultaid.com</Link>
                                                             </div>
                                                         </div>
                                                     </div>

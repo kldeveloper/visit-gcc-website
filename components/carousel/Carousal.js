@@ -7,14 +7,13 @@ import SingleHomeExperience from '../home/experience/experience';
 import SingleHomeBlog from '../home/blog/blog';
 import TabSlider from '../countries/tab-slider';
 import CountryExperiance from '../countries/country-experiance';
-import CountryExplore from '../countries/countries-explore';
 import SingleBestPicked from '../tour-package/best-picked';
 import Singlewonders from '../tour-package/wonders';
 import SinglePackageContainerReview from '../tour-package-details/package-container-review';
 import SinglePackageContainerReviewImage from '../tour-package-details/package-details-review';
 import RatingCarousel from '../tour-package-details/RatingCarousel';
 import PakageDetailsOtherPackages from '../tour-package-details/pakage-details-other-packages';
-
+import CountryInspiration from '../countries/country-inspiration';
 // Import Slick Carousel and styles
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -29,8 +28,6 @@ function Carousal({
     country,
     experiences,
     blog,
-    countryDestinations,  // Update here
-    countryExplore,
     userRatingsCarosul,
     pakageDetailsOtherPackages,
     count,
@@ -41,7 +38,7 @@ function Carousal({
     packageDetailsReviewImage  
 }) {
     const Responsive = {
-        dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-countryDestinations' && type !== 'home-blog',
+        dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-blog',
         infinite: true,
         speed: 500,
         slidesToShow: count,
@@ -55,7 +52,7 @@ function Carousal({
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-countryDestinations' && type !== 'home-blog'
+                    dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-blog'
                 }
             },
             {
@@ -112,10 +109,7 @@ function Carousal({
                 blog.map((b) => (
                     <SingleHomeBlog key={b.id} image={b.image} heading={b.heading} description={b.description} link={b.link} />
                 ))}
-            {type === 'home-countryDestinations' &&
-                countryDestinations.map((b) => (  // Updated here
-                    <CountryExplore key={b.id} image={b.image} heading={b.heading} description={b.description} link={b.link} />
-                ))}
+            
                 
             {type === 'home-event' &&
                 events.map((event) => (
@@ -123,6 +117,7 @@ function Carousal({
                         key={event.id}
                         image={event.image}
                         heading={event.heading}
+                        date={event.date}
                         description={event.description}
                         link={event.link}
                     />
@@ -141,7 +136,7 @@ function Carousal({
 
             {type === 'country-tab-slider' &&
                 country.map((country) => (
-                    <TabSlider
+                    <CountryInspiration
                         key={country.id}
                         image={country.image}
                         heading={country.heading}
@@ -160,16 +155,7 @@ function Carousal({
                     />
                 ))
             }
-            {type === 'country-explore' &&
-                countryExplore.map((countryExplore) => (
-                    <CountryExplore
-                        key={countryExplore.id}
-                        image={countryExplore.image}
-                        heading={countryExplore.heading}
-                        description={countryExplore.description}
-                        link={countryExplore.link}
-                    />
-                ))}
+           
             {type === 'tour-bestPicked' &&
                 bestPicked.map((bestPicked) => (
                     <SingleBestPicked
