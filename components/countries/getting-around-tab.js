@@ -141,7 +141,7 @@ const GettingAroundTab = () => {
                                                                 <tbody>
 
                                                                     <tr className='border'>
-                                                                        <td colspan="9">
+                                                                        <td colSpan="9">
                                                                             <p className='py-0'>Next Available</p>
                                                                         </td>
                                                                     </tr>

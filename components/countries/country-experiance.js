@@ -32,7 +32,7 @@ function CountryExperiance(props) {
                 </div>
             </div>
         </div>
-    );
+    )
 }
 
 export default CountryExperiance;

@@ -16,8 +16,16 @@ function country() {
         { id: 5, heading: 'Desitination Heading', description: 'Events', image: "/images/blog/01.jpg" },
     ];
 
+    const countryDestinationsData = [
+        { id: 1, heading: 'Desitination Heading', description: 'Luxury', image: "/images/blog/01.jpg" },
+        { id: 2, heading: 'Desitination Heading', description: 'Culture', image: "/images/blog/02.jpg" },
+        { id: 3, heading: 'Desitination Heading', description: 'Coastal Esscapes', image: "/images/blog/03.jpg" },
+        { id: 4, heading: 'Desitination Heading', description: 'History', image: "/images/blog/04.jpg" },
+        { id: 5, heading: 'Desitination Heading', description: 'Events', image: "/images/blog/01.jpg" },
+    ];
 
-    const countryExperiance = [
+
+    const countryExperianceData = [
         { id: 1, heading: 'Experience 1', description: 'Adventure', image: "/images/experience/01.jpg" },
         { id: 2, heading: 'Experience 2', description: 'Cultural', image: "/images/experience/02.jpg" },
         { id: 3, heading: 'Experience 3', description: 'Relaxation', image: "/images/experience/03.jpg" },
@@ -56,9 +64,8 @@ function country() {
                     <div className={style['country-explore']}>
                         <div className='container-fluid'>
                             <div className='row'>
-                            <div className='col-md-12 text-center mt-4'>
-                                <Carousal countryExplore={countryExplore} count={5} type="country-explore" />
-                            </div>
+                               {/* <Carousal countryExplore={countryExplore} count={5} type="country-explore" /> */}
+                                <Carousal countryDestinations={countryDestinationsData} count={5} type="home-countryDestinations" />
                             </div>
                             <div className='row'>
                                 <div className='col-md-12 text-center mt-4'>
@@ -154,7 +161,9 @@ function country() {
                     <div className={style['country-experiance']}>
                         <div className='container'>
                             <div className='row'>
-                            <Carousal countryExperiance={countryExperiance} count={3} type="country-experiance" />
+                            {/* <Carousal countryExperiance={countryExperiance} count={3} type="country-experiance" /> */}
+
+                            <Carousal countryExperiance={countryExperianceData} count={4} type="country-Experiance" />
 
                             </div>
                         </div>

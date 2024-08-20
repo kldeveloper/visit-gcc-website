@@ -71,6 +71,7 @@
 .country-explore-item{
     border-radius:15px;
 }
+
 .country-explore-text{
     padding: 10px;
 }
@@ -335,6 +336,7 @@ border-radius:15px 15px 0 0;
     padding: 50px 15px;
     float: left;
     width: 100%;
+    overflow: hidden;
 }
 
 

@@ -29,6 +29,7 @@ function Carousal({
     country,
     experiences,
     blog,
+    countryDestinations,  // Update here
     countryExplore,
     userRatingsCarosul,
     pakageDetailsOtherPackages,
@@ -37,10 +38,10 @@ function Carousal({
     bestPicked,
     wonders,
     packageDetailsReview,
-    packageDetailsReviewImage
+    packageDetailsReviewImage  
 }) {
     const Responsive = {
-        dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-blog',
+        dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-countryDestinations' && type !== 'home-blog',
         infinite: true,
         speed: 500,
         slidesToShow: count,
@@ -54,7 +55,7 @@ function Carousal({
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-blog'
+                    dots: type !== 'home-package' && type !== 'home-event' && type !== 'home-experience' && type !== 'home-countryDestinations' && type !== 'home-blog'
                 }
             },
             {
@@ -111,6 +112,11 @@ function Carousal({
                 blog.map((b) => (
                     <SingleHomeBlog key={b.id} image={b.image} heading={b.heading} description={b.description} link={b.link} />
                 ))}
+            {type === 'home-countryDestinations' &&
+                countryDestinations.map((b) => (  // Updated here
+                    <CountryExplore key={b.id} image={b.image} heading={b.heading} description={b.description} link={b.link} />
+                ))}
+                
             {type === 'home-event' &&
                 events.map((event) => (
                     <SingleHomeEvents
@@ -118,7 +124,6 @@ function Carousal({
                         image={event.image}
                         heading={event.heading}
                         description={event.description}
-                        date={event.date}
                         link={event.link}
                     />
                 ))}
@@ -144,17 +149,17 @@ function Carousal({
                         link={country.link}
                     />
                 ))}
-                {type === 'country-experiance' &&
-                    countryExperiance.map((experiance) => (
-                        <CountryExperiance
-                            key={experiance.id}
-                            image={experiance.image}
-                            heading={experiance.heading}
-                            description={experiance.description}
-                            link={experiance.link}
-                        />
-                    ))
-                }
+            {type === 'country-Experiance' &&
+                countryExperiance.map((experiance) => (
+                    <CountryExperiance
+                        key={experiance.id}
+                        image={experiance.image}
+                        heading={experiance.heading}
+                        description={experiance.description}
+                        link={experiance.link}
+                    />
+                ))
+            }
             {type === 'country-explore' &&
                 countryExplore.map((countryExplore) => (
                     <CountryExplore
