@@ -256,7 +256,7 @@ const Country = () => {
                                             <h3 className='pb-3'>Best picked for you</h3>
                                         </div>
                                         <div className='col-md-12'>
-                                            <Carousal bestPicked={bestPickedData} count={4} type="tour-bestPicked" />
+            <Carousal bestPicked={bestPickedData} count={4} type="tour-bestPicked" />
                                         </div>
                                     </div>
                                 </div>

@@ -17,6 +17,7 @@ import CountryInspiration from '../countries/country-inspiration';
 // Import Slick Carousel and styles
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import FeaturedTravel from '../tour-package/featured-travel';
 
 const SlickCarousel = dynamic(() => import('react-slick'), {
     ssr: false
@@ -33,6 +34,7 @@ function Carousal({
     count,
     type,
     bestPicked,
+    featuredTravel,
     wonders,
     packageDetailsReview,
     packageDetailsReviewImage  
@@ -70,12 +72,43 @@ function Carousal({
         {
             id: 1,
             link: 'https://www.google.com/',
-            heading: 'Lorem Ipsum is simply dummy text',
+            heading: 'Lorem Ipsum is dummy text',
             description:
-                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s... ',
+                'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s... ',
             image: '/images/blog/01.jpg'
         },
-        // More data...
+        {
+            id: 2,
+            link: 'https://www.google.com/',
+            heading: 'Lorem Ipsum is dummy text',
+            description:
+                'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s... ',
+            image: '/images/blog/01.jpg'
+        },
+        {
+            id: 3,
+            link: 'https://www.google.com/',
+            heading: 'Lorem Ipsum is dummy text',
+            description:
+                'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s... ',
+            image: '/images/blog/01.jpg'
+        },
+        {
+            id: 4,
+            link: 'https://www.google.com/',
+            heading: 'Lorem Ipsum is dummy text',
+            description:
+                'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s... ',
+            image: '/images/blog/01.jpg'
+        },
+        {
+            id: 5,
+            link: 'https://www.google.com/',
+            heading: 'Lorem Ipsum is dummy text',
+            description:
+                'Lorem Ipsum is dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s... ',
+            image: '/images/blog/01.jpg'
+        },
     ];
 
     return (
@@ -155,6 +188,17 @@ function Carousal({
                     />
                 ))
             }
+
+            {type === 'tour-FeaturedTravel' &&
+                featuredTravel.map((featuredTravel) => (
+                    <FeaturedTravel
+                        key={featuredTravel.id}
+                        image={featuredTravel.image}
+                        heading={featuredTravel.heading}
+                        description={featuredTravel.description}
+                        link={featuredTravel.link}
+                    />
+                ))}
            
             {type === 'tour-bestPicked' &&
                 bestPicked.map((bestPicked) => (

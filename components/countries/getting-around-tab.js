@@ -63,8 +63,7 @@ const GettingAroundTab = () => {
                                             </button>
                                         </li>
                                         <li className={`nav-item ${style['country-nav-item']}`} role="presentation">
-                                            <button
-                                                className={`nav-link border-0 ${style['around-nav-link']}`}
+                                            <button className={`nav-link border-0 ${style['around-nav-link']}`}
                                                 id="boat-tab-unique"
                                                 data-bs-toggle="tab"
                                                 data-bs-target="#boat-unique"
@@ -80,7 +79,7 @@ const GettingAroundTab = () => {
                                 </div>
                                 <div className="col-md-8">
                                     <div className='row'>
-                                        <div className='col-md-6 pb-3 mpt-15'>
+                                        <div className={`col-md-6 pb-3 ${style['mpt-15']}`}>
                                             <label>From where in Bahrain?</label>
                                             <select className='form-control'>
                                                 <option>Select</option>

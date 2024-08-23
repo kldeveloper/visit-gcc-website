@@ -17,9 +17,12 @@ function Country() {
         { id: 5, heading: 'Destination Heading 5', description: 'Events', image: "/images/blog/01.jpg" },
     ];
 
+    const countryExperiance = [        
+    ];
+
     
 
-
+    
 
     return (
         <div>
@@ -131,8 +134,6 @@ function Country() {
                     </div>
                 </div>
                <GettingAroundTab /> 
-
-
             </div>
 
 
@@ -151,10 +152,11 @@ function Country() {
                     <div className={style['country-experiance']}>
                         <div className='container'>
                             <div className='row'>
+                            <div className="col-md-12 pb-3">
                             {/* <Carousal countryExperiance={countryExperiance} count={3} type="country-experiance" /> */}
 
-                            {/* <Carousal countryExperiance={countryExperianceData} count={4} type="country-Experiance" /> */}
-
+                            <Carousal countryExperiance={countryExperiance} count={4} countTab={1} type="country-Experiance" />
+                           </div>
                             </div>
                         </div>
                     </div>

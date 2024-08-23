@@ -75,6 +75,16 @@ const TourPackageTab = ({ breakPoints }) => {
         { id: 5, heading: 'Desitination Heading', description: 'Events', image: "/images/blog/01.jpg" },
     ];
 
+
+    const featuredTravelData = [
+        { id: 1, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/01.jpg" },
+        { id: 2, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/02.jpg" },
+        { id: 3, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/03.jpg", },
+        { id: 4, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/01.jpg" },
+        { id: 5, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/02.jpg" },
+        { id: 6, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/03.jpg", },
+    ];
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             require('bootstrap/dist/js/bootstrap.bundle.min.js');
@@ -278,7 +288,10 @@ const TourPackageTab = ({ breakPoints }) => {
                                 <div className={style['country-explore2']}>
                                     <div className='container'>
                                         <div className='row'>
-                                            <Carousal countryExplore={countryExplore} count={3} type="country-explore" />
+                                        <div className='col-md-12 text-center mt-4'>
+    <Carousal featuredTravel={featuredTravelData} count={4} type="tour-FeaturedTravel" />
+    </div>
+
                                         </div>
                                         <div className='row'>
                                             <div className='col-md-12 text-center mt-4'>

@@ -165,7 +165,7 @@
   
   .flip-container, .front, .back {
       width: 100%;
-      height: 380px;
+      height: 320px;
       border-radius:20px;
      
   }
@@ -181,7 +181,7 @@
   .back {
     background: #009597;
     color: #fff;
-    padding: 40px 20px;
+    padding:20px;
   }
   
   span .h3, .back h3 {
@@ -203,7 +203,7 @@
   }
   
   .block-content {
-    padding: 15px 20px 20px 20px;
+    padding: 15px 0px 20px 0px;
   }
   
   .front h2 {
@@ -215,12 +215,12 @@
     color: #000;
     display: inline-block;
     font-size: 12px;
-    padding: 8px 12px;
+    padding: 8px;
     border-radius: 15px;
   }
   .tag i{ margin-right: 10px;}
   .back p {
-    margin: 40px 0;
+    margin: 30px 0;
     line-height: 20px;
     text-align: justify;
     margin-top: 10px;
@@ -245,7 +245,7 @@
   .flipper {
       transition: 0.4s;
       transform-style: preserve-3d;
-    margin: 0 20px;
+    margin: 0 10px;
       position: relative;
   }
   
@@ -349,10 +349,14 @@ border-radius:15px 15px 0 0;
         }
         .section-documentation {
             padding: 15px 0;
-        }    
+        }   
+        .flip-container, .front, .back {
+            height: 360px;
+           
+        } 
             
 
-
+ 
       }
 
       @media screen and (max-width: 1023px) and (min-width: 992px) {
