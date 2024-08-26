@@ -7,12 +7,14 @@ const ArrowIcon = () => <FaArrowRightLong />;
 function FeaturedTravel(props) {
     return (
         <>
-            <div className="item">
-                <div className={style['best-picked-box']}>
+            <div   className={`item ${style['item-padding']}`}>
+                <div className={style['featured-travel']}>
                     <img src={props.image} className='w-100' alt={props.heading} />
                     <span>
+                        <div>
                         <h4>{props.heading}</h4>
                         <p>{props.description}</p>
+                        </div>
                     </span>
 
                 </div>

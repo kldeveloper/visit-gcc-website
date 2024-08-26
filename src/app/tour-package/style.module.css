@@ -14,8 +14,9 @@
     font-size: 15px !important;
 }
 .package-filter{
-    float: left;
+    float: right;
     width: 100%;
+    max-width: 350px;
     
 }
 .price-range{
@@ -122,7 +123,7 @@
     display: flex;
     margin: 0 auto;
     position: relative;
-    max-width: 1500px;
+    /* max-width: 1500px; */
 }
 .tour-packagebtn-container{
         margin: 0 auto;
@@ -153,3 +154,8 @@
     justify-content: center;
 }
 
+.right-container-filter{
+    float: left;
+    width: 100%;
+    max-width: 1180px;
+}

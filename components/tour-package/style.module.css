@@ -339,6 +339,50 @@ border-radius:15px 15px 0 0;
     overflow: hidden;
 }
 
+.featured-travel {
+    float: left;
+    width: 100%;
+    position: relative;
+    
+}
+.featured-travel span {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: -66px;
+    padding: 10px 10px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.pakage-bes-picked .item {
+    border-radius:15px !important;
+}
+.featured-travel {
+    border-radius: 15px;
+}
+.featured-travel img {
+    border-radius: 15px;
+}
+.featured-travel span {
+    border-radius:0 0 15px 15px;
+}
+.item-padding{
+    padding:0 10px;
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-travel p{
+    margin-bottom: 0;
+}
+
+
+
 
 .best-picked-box {
     float: left;

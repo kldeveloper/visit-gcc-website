@@ -77,12 +77,12 @@ const TourPackageTab = ({ breakPoints }) => {
 
 
     const featuredTravelData = [
-        { id: 1, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/01.jpg" },
-        { id: 2, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/02.jpg" },
-        { id: 3, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/03.jpg", },
-        { id: 4, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/01.jpg" },
-        { id: 5, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/02.jpg" },
-        { id: 6, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/03.jpg", },
+        { id: 1, heading: 'Travel Heading', description: 'Industry Name', image: "/images/best-picked/01.jpg" },
+        { id: 2, heading: 'Travel Heading', description: 'Industry Name', image: "/images/best-picked/02.jpg" },
+        { id: 3, heading: 'Travel Heading', description: 'Industry Name', image: "/images/best-picked/03.jpg", },
+        { id: 4, heading: 'Travel Heading', description: 'Industry Name', image: "/images/best-picked/01.jpg" },
+        { id: 5, heading: 'Travel Heading', description: 'Industry Name', image: "/images/best-picked/02.jpg" },
+        { id: 6, heading: 'Travel Heading', description: 'Industry Name', image: "/images/best-picked/03.jpg", },
     ];
 
     useEffect(() => {
@@ -307,6 +307,22 @@ const TourPackageTab = ({ breakPoints }) => {
                 {/* CountryExplore */}
 
             </div>
+
+
+            <div className={`container-fluid ${style['pr-0']}`}>
+                <div className="row pb-2">
+                    <div className="col-md-12">
+                    
+                    </div>
+                </div>
+            </div>
+                    
+
+
+
+
+
+
         </section>
 
 

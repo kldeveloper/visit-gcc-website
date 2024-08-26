@@ -187,10 +187,13 @@ const Country = () => {
 
                         {/* right */}
                         <div className={`${style['right']}  ${isToggled ? `${style['filter-full-width']}` : ''}`}>
-                            <h3>GCC Countries</h3>
+                            
+                        <div className={style['right-container-filter']}>
+                        <h3>GCC Countries</h3>
                             <TourPackageTab
                                 breakPoints={isToggled ? firstBreakPoints : secondBreakPoints}
                             />
+                            </div>
 
 
                             {/* TourPackageTab Start */}
