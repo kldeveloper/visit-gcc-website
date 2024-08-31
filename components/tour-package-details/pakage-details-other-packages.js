@@ -8,7 +8,7 @@ function PakageDetailsOtherPackages(props) {
 
     return (
         <>
-            <Link className="item">
+            <Link className="item" href="">
                 <div className={style['PakageDetailsOtherPackages']}>
                     <img src={props.image} className='w-100' alt="" />
                     <div className={style['PakageDetailsOtherPackages-text']}>
@@ -24,4 +24,5 @@ function PakageDetailsOtherPackages(props) {
 }
 
 export default PakageDetailsOtherPackages
+
 

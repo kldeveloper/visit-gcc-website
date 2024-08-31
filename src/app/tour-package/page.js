@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import Link from 'next/link';
 import style from './style.module.css';
 import Banner from '../../../components/banner/banner';
 import Countries from '../../../components/countries/countries';
@@ -11,13 +10,14 @@ import HolidaysTab from '../../../components/tour-package/holidays-tab';
 import Accordion from '../../../components/accordion/accordion';
 import TourPackageTab from '../../../components/tour-package/tour-package-tab';
 import { LuMenu } from "react-icons/lu";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 const Country = () => {
     const [priceRange, setPriceRange] = useState([30, 3900]);
     const [durationRange, setDurationRange] = useState([1, 10]);
     const [isToggled, setIsToggled] = useState(false);
-    const firstBreakPoints = { 350: 1, 750: 3, 1200: 6, 1500: 4 };
-    const secondBreakPoints = { 350: 1, 750: 2, 1200: 5, 1500: 3 };
+    const firstBreakPoints = { 350: 1, 750: 2, 1200: 2, 1500: 4 };
+    const secondBreakPoints = { 350: 1, 750: 2, 1200: 2, 1500: 3 };
 
     const handleToggle = () => {
         setIsToggled(!isToggled);
@@ -31,6 +31,9 @@ const Country = () => {
         setDurationRange(values);
     };
 
+
+
+    
     const accordionData = [
         {
             title: 'ACTIVITIES',
@@ -181,19 +184,29 @@ const Country = () => {
                                         <Accordion key={index} title={accordion.title} items={accordion.items} isOpenInitially={true} />
                                     ))}
                                 </div>
+
+                                <button className={`${style['btn-toggle']} ${style['btn-close']}`} onClick={handleToggle}>
+                                <IoIosCloseCircleOutline />
+                              </button>
+
                             </div>
+
+                            <button className={`${style['btn-one']} ${style['btn-mobile']}`} onClick={handleToggle}>
+                            Search
+                              </button>
+
+                           
+
+
                         </div>
                         {/* left end */}
 
                         {/* right */}
                         <div className={`${style['right']}  ${isToggled ? `${style['filter-full-width']}` : ''}`}>
-                            
-                        <div className={style['right-container-filter']}>
-                        <h3>GCC Countries</h3>
+                            <h3>Tour Packages</h3>
                             <TourPackageTab
                                 breakPoints={isToggled ? firstBreakPoints : secondBreakPoints}
                             />
-                            </div>
 
 
                             {/* TourPackageTab Start */}
@@ -210,7 +223,7 @@ const Country = () => {
                                 <div className={style['cta-section-container']}>
                                     <div className='container'>
                                         <div className='row'>
-                                            <div className={`col-md-6 ${style['cta-half-left']}`}>
+                                            <div className={`col-xxl-6 col-xl-6  col-lg-12  col-md-12  col-sm-12  col-12 mt-3 ${style['cta-half-left']}`}>
 
                                                 <div className={`container ${style['cta-half-container']}`}>
                                                     <div className='row'>
@@ -222,14 +235,14 @@ const Country = () => {
                                                         </div>
                                                         <div className='col-md-6'>
                                                             <div className={style['cta-section-right']}>
-                                                                <Link href='tel:+5866 958 5545'>: +5866 958 5545</Link>
+                                                                <a href='tel:+5866 958 5545'>: +5866 958 5545</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div className='col-md-6'>
+                                            <div className='col-xxl-6 col-xl-6  col-lg-12  col-md-12  col-sm-12  col-12 mt-3'>
                                                 <div className='container'>
                                                     <div className='row'>
                                                         <div className='col-md-6 '>
@@ -240,7 +253,7 @@ const Country = () => {
                                                         </div>
                                                         <div className='col-md-6'>
                                                             <div className={style['cta-section-right']}>
-                                                                <Link href='mailto:info@consultaid.com'>:info@consultaid.com</Link>
+                                                                <a href='mailto:info@consultaid.com'>:info@consultaid.com</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -259,7 +272,7 @@ const Country = () => {
                                             <h3 className='pb-3'>Best picked for you</h3>
                                         </div>
                                         <div className='col-md-12'>
-            <Carousal bestPicked={bestPickedData} count={4} type="tour-bestPicked" />
+                                            <Carousal bestPicked={bestPickedData} count={4} type="tour-bestPicked" />
                                         </div>
                                     </div>
                                 </div>
@@ -268,7 +281,7 @@ const Country = () => {
 
                             {/* lesser-known wonders */}
                             <section className={style['pakage-bes-picked']}>
-                                <div className='container'>
+                                <div className='container p-0'>
                                     <div className='row'>
                                         <div className='col-md-12'>
                                             <h3 className='pb-3'>Lesser-Known Wonders</h3>
@@ -284,7 +297,7 @@ const Country = () => {
 
                             {/* holidays by theme */}
                             <section className={style['pakage-bes-picked']}>
-                                <div className='container'>
+                                <div className='container p-0'>
                                     <div className='row'>
                                         <div className='col-md-12'>
                                             <h3 className='pb-3'>Holidays by theme</h3>

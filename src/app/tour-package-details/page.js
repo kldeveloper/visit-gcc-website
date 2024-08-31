@@ -312,7 +312,7 @@ function Page() {
                             <div className='row'>
                                 <div className='col-md-8'>
                                     <h3>Ask Your Questions</h3>
-                                    <p>If your question has not been answered, you can submit your own by using the form below. Alternatively, feel free to <link href='#0'><b><u>Contact Us</u></b></link> and one of our staff will be happy to assist you.</p>
+                                    <p>If your question has not been answered, you can submit your own by using the form below. Alternatively, feel free to <Link href='#0'><b><u>Contact Us</u></b></Link> and one of our staff will be happy to assist you.</p>
                                 </div>
                             </div>
 

@@ -300,22 +300,14 @@ const TourPackageTab = ({ breakPoints }) => {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </section>
                     </div>
                 </div>
                 {/* CountryExplore */}
-
-            </div>
-
-
-            <div className={`container-fluid ${style['pr-0']}`}>
-                <div className="row pb-2">
-                    <div className="col-md-12">
-                    
-                    </div>
-                </div>
-            </div>
+<div className='bg-container'><div>dd</div></div>
+            </div>       
                     
 
 
