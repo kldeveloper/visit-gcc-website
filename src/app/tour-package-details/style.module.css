@@ -158,47 +158,13 @@
 
 
 
-  .normal-container{
-    float: left;
-    width: 100%;
-    overflow: hidden;
-}
 
-@media only screen and (max-width: 991px) {
-.review-text-container {
-    position: relative;
-    margin-top: -50px;
-    margin-bottom: 15px;
-    float: left;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-}
-.inclusions {
-    flex-wrap: wrap;
-}
 
-.inclusions span {
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
-.tabButtons {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: min-content;
-    overflow-y: hidden;
-    overflow-x: scroll;
-}
-.flex-package-details {
-    flex-wrap: wrap;
-}
-.flex-package-details span {
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
-}
 
-}
+
+
+
+
 
 
 

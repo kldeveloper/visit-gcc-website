@@ -61,9 +61,6 @@ const Country = () => {
         }
     ];
 
-
-    
-
     const bestPickedData = [
         { id: 1, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/01.jpg" },
         { id: 2, heading: 'Best Picked', description: 'Lorem Ipsum is dummy text', image: "/images/best-picked/02.jpg" },
@@ -206,25 +203,7 @@ const Country = () => {
 
                         {/* right */}
                         <div className={`${style['right']}  ${isToggled ? `${style['filter-full-width']}` : ''}`}>
-
-                        <div className={style['title-two']}>
-                            <span><h3>Tour Packages</h3></span>
-                            <span>
-                                    <select
-                                    className={style['sort-select']}>
-                                    <option value="">Sort by</option>
-                                    <option value="popularity">Popularity</option>
-                                    <option value="priceLowToHigh">Price: Low to High</option>
-                                    <option value="priceHighToLow">Price: High to Low</option>
-                                    <option value="durationShortToLong">Duration: Short to Long</option>
-                                    <option value="durationLongToShort">Duration: Long to Short</option>
-                                </select>
-                            </span>
-                        </div>
-                            
-
-
-                            
+                            <h3>Tour Packages</h3>
                             <TourPackageTab
                                 breakPoints={isToggled ? firstBreakPoints : secondBreakPoints}
                             />
@@ -234,7 +213,7 @@ const Country = () => {
                             {/* TourPackageTab End */}
 
 
-                            <div className={style['bg-container']}><div></div></div> 
+
 
 
 

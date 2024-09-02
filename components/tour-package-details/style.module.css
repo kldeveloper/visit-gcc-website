@@ -324,49 +324,14 @@ border:none;
     -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.33);
     box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.33);}
 
+
+
     .item-padding{
         padding:0 10px;
         float: left;
         width: 100%;
         position: relative;
         overflow: hidden;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
-
-
-
-    @media only screen and (max-width: 991px) {
-       
-        .tabButtons {
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: min-content;
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
-        .tabButtons button{
-            float: left;
-            width: auto;
-            text-wrap: nowrap;
-        }
-        .package-inclusions-tabs {
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: min-content;
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
-        .package-inclusions-tabs li {
-            float: left;
-        }
-        .package-inclusions-tabs li button{
-            float: left;
-            width: auto;
-            text-wrap: nowrap;
-        }
-        
-        }
-
-
-    
 

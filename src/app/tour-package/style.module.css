@@ -2,10 +2,10 @@
     float: left;
     width: 100%;
 }
+
 .tour-package-page-container{
     max-width: 100%;
     margin: 0 auto;
-    overflow: hidden;
 }
 .tour-package-page h4{
     float: left;
@@ -211,10 +211,6 @@
 .cta-half-container::after {
     display: none;
 }
-
-
-
-
 }
 
 
@@ -230,54 +226,12 @@
 .btn-close{
     display: none;
 }
-.bg-container div {
+.bg-container div{
     position: absolute;
     background: #ecf1f7;
     width: 100%;
     margin-left: -12px;
-    margin-top: -543px;
+    margin-top: -542px;
     height: 542px;
     z-index: 1;
 }
-
-.title-two {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-.sort-select {
-    padding: 8px 12px;
-    border: none;
-    background-color: transparent;
-    color: #333;
-    font-size: 16px;
-    width: auto;
-    padding-right: 24px; /* Space for the arrow */
-    appearance: none; /* Remove default dropdown arrow */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: none;
-    position: relative;
-    cursor: pointer;
-    background-image: url('../../../public/images/down.svg'); /* Use your arrow image here */
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 12px;
-}
-
-.sort-select:focus {
-    outline: none;
-}
-
-.sort-select option {
-    color: #333;
-   
-}
-
-.sort-select option:first-child {
-    text-align: right;
-}
-
