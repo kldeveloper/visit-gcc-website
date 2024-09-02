@@ -4,11 +4,11 @@ import style from './style.module.css';
 import { FaChevronRight } from "react-icons/fa6";
 
 
-function PakageDetailsOtherPackages(props) {
+function PakageDetailsOtherPackages(props) { 
 
     return (
         <>
-            <Link className="item" href="">
+            <Link className={`item ${style['item-padding']}`} href="" > 
                 <div className={style['PakageDetailsOtherPackages']}>
                     <img src={props.image} className='w-100' alt="" />
                     <div className={style['PakageDetailsOtherPackages-text']}>

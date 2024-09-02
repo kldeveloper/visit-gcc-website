@@ -199,7 +199,7 @@ function Page() {
                             <h3 className={`container ${style['p-color']}`}>Package Inclusions</h3>
                             <PackageInclusions />
                         </div>
-                        <div className='col-md-12'>
+                        <div className='col-md-12 pt-4'>
                             <h3 className={`container ${style['p-color']}`}>Package Exclusions</h3>
                             <PackageExclusions />
                         </div>
@@ -268,10 +268,10 @@ function Page() {
                         </div>
                     </div>
                     <div className='row pt-5'>
-                        <div className='col-md-4'>
+                        <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-7'>
                             <h4>What guests loved most</h4>
                         </div>
-                        <div className='col-md-4'>
+                        <div className='col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-5'>
                             <Link className='float-right' href='#0'>See all reviews</Link>
                         </div>
                     </div>
@@ -294,7 +294,10 @@ function Page() {
                     <div className='row pt-2'>
 
                         <div className='col-md-12'>
-                            <Carousal pakageDetailsOtherPackages={pakageDetailsOtherPackages} count={5} type="pakage-details-other-packages" />
+                        <div  className={style['normal-container']}>
+                        <Carousal pakageDetailsOtherPackages={pakageDetailsOtherPackages} count={5} type="pakage-details-other-packages" />
+                        </div>
+                           
                         </div>
                         <div className='col-md-12'>
                             <button className={style['btn-three']}>FULL PROJECTS</button>

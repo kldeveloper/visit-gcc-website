@@ -339,7 +339,10 @@ border-radius:15px 15px 0 0;
     overflow: hidden;
 }
 
-
+.countries-explore-container{
+    z-index: 1000;
+    position: relative;
+}
 
 .featured-travel {
     float: left;
@@ -509,6 +512,7 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 54%, rgba(0,0,0,0) 100%);
     /* max-width: 1108px; */
     max-width: 100%;
 }
+
 .bg-container {
     position: absolute;
     background: #ecf1f7;
